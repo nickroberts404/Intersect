@@ -1,0 +1,76 @@
+/*The font after the field is clicked*/
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+   color: #55b5ed; 
+}
+
+/*Color for the lines in the form*/
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #55b5ed;
+  box-shadow: 0 1px 0 0 #55b5ed;
+}
+
+
+/*the tabs*/
+.tabs .tab a {
+    color: #55b5ed;
+}
+
+.tabs .tab a:hover {
+    color: #55b5ed;
+}
+
+/*the line below the tab*/
+.tabs .indicator {
+    background-color: #55b5ed;
+}
+
+/*navbar Overide*/
+nav {
+    background-color: #cb5727;
+}
+
+body{
+	background-color: #f6f7f9;
+}
+
+.iconColorOrag{
+  color: #55b5ed;
+}
+
+
+/*the progress bar colors*/
+.progress .determinate {
+    background-color: #55b5ed;
+  }
+
+.progress {
+
+    background-color: #DAEFFB;
+   
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #cb5727;
+  background-color: #cb5727;
+ 
+}
