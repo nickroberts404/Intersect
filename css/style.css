@@ -114,7 +114,7 @@ Home Page Styles
 
 .homePageCover{
     position: relative;
-    min-height: 800px;
+    min-height: 100vh;
     background: rgb(255, 255, 255) url('../img/coverPhoto.jpg') no-repeat center center;
     background-size: 100%;
     color: #fff;
@@ -122,20 +122,21 @@ Home Page Styles
 }
 
 .homePageCover h1{
-  margin: 150px 0 45px 0;
+  margin: 100px 0 45px 0;
 }
 
 .texture-overlay {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    
     width: 100%;
     height: 100%;
     background-image: url(../img/grid.png);
 }
 
 #logoContainer {
-    width: 110px;
+    vertical-align: middle;
+    width: 75px;
+    height: auto;
     /*padding-bottom: 190px;*/
 }
 
@@ -146,7 +147,6 @@ Home Page Styles
 
 #padMe190 {
     /*width: 100px;*/
-    padding-top: 220px;
 }
 
 /*Overide the button color for the page*/
@@ -164,8 +164,6 @@ Home Page Styles
     padding: 60px 0 60px 0;
 }
 
-
-
 /*Style For How it Works Section*/
 
 section.howItWorks i {
@@ -181,7 +179,7 @@ section.howItWorks h1 {
     font-size: 20px;
 }
 section.howItWorks {
-    padding: 60px 0;
+    padding: 10px;
     background-color: #f6f7f9;
 }
 section.howItWorks a {
@@ -189,9 +187,10 @@ section.howItWorks a {
 }
 
 
+
 /*Feature list*/
 .features-list {
-    padding: 130px 0
+    padding: 25px 0
 }
 .features-list h1 {
     margin: 0 0 10px 0;
@@ -200,7 +199,7 @@ section.howItWorks a {
     font-size: 16px;
 }
 .features-list p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #778899;
 }
 .feature-content {
@@ -221,7 +220,7 @@ section.howItWorks a {
 }
 .feature-icon i {
     color: #cb5727;
-    padding-top:28px;
+    padding-top:15px;
 }
 
 /* ==========================================================================
