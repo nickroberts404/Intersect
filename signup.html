@@ -1,0 +1,83 @@
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/bundle.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JS Lib -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+
+<body>
+<section class="screenshots-intro" id="signUpSection">
+
+      <div class="row auth-form-container padTheform60">
+    <div class="col m12">
+      <div class="col l2 m2"><br></div>
+      <div class="auth-form z-depth-3 col l8 m8 s12">
+
+        <form method="POST" action="/register">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Email</label>
+            </div>
+            <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">City</label>
+            </div>
+          </div>
+
+          <!-- <div class="row">
+            <div class="input-field col s6">
+            <input id="email" type="text" class="validate">
+            <label for="email">Email</label>
+            </div>
+          </div>
+            <div class="input-field col s6">
+            <input id="fromCity" type="text" class="validate">
+            <label for="fromCity">City</label> -->
+            <!-- </div> -->
+          <div class="row">
+            <div class="input-field col s12">
+            <input id="username" type="text" class="validate">
+            <label for="username">Username</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12" >
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="confirm_password" type="password" class="validate">
+              <label for="confirm_password">Confirm Password</label>
+            </div>
+          </div>
+     
+          <div class="center-align">
+            <button type="submit" class="waves-effect waves-light btn auth-form-submit-button">Register</button>
+          </div>
+        </form>
+      </div>
+      <div class="col l2 m2"><br></div>
+    </div>
+  
+      </div>
+    </section>
+  </body>
