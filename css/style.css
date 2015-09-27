@@ -15,6 +15,13 @@ body > div {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
+h/*tml { 
+  background: url(../img/pic.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
 /* End of Prevent overscroll for mac */
 
 
@@ -73,8 +80,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     width: 100%;
     height: 100%;
     position: relative;
-    /*background: rgb(203, 87, 39) url('../../img/.jpg') no-repeat top center;*/
-    background-size: cover;
+    background: rgb(255, 255, 255) url('../img/pic4.jpeg') no-repeat top center;
+    background-size: 100%;
     color: #000000;
     overflow: auto;
 
@@ -227,7 +234,7 @@ section.howItWorks a {
 Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
-    padding: 20px 0 20px 0;
+    /*padding: 20px 0 20px 0;*/
     /*background-color: #f6f7f9;*/
 }
 .screenshots-intro h1 {
