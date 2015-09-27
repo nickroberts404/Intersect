@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sample Login</title>
+	<link rel="stylesheet" href="css/bundle.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bundle.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+</head>
+<body>
+	 <div class="row">
+		 <div class="col s12">
+		  <div class="row">
+			<div class="input-field col s12 m6">
+			  <input id="login-email" type="email" class="validate">
+			  <label for="login-email">Email</label>
+			</div>
+			<div class="input-field col s12 m6">
+			  <input id="login-pass" type="password" class="validate">
+			  <label for="login-pass">Password</label>
+			</div>
+		  </div>
+		  <button class="btn waves-effect waves-light" id="signup-button">Sign up</button>
+		  <button class="btn waves-effect waves-light" id="login-button">Login</button>
+		  <button class="btn waves-effect waves-light" id="login-fb-button">Login with Facebook</button>
+		 </div>
+	 </div>
+	<script>
+		var fire = new Firebase("https://intersecthacktx.firebaseio.com/");
+		var signupButton = $('#signup-button');
+		var loginButton = $('#login-button');
+		var loginFBButton = $('#login-fb-button');
+		signupButton.on("click", handleUserCreation);
+		loginButton.on("click", handleUserLogin);
+		loginFBButton.on("click", handleUserLoginFacebook);
+		function handleUserCreation(e){
+			var email = $('#login-email').val();
+			var pass = $('#login-pass').val();
+			fire.createUser({
+				email: email,
+				password: pass
+			}, function(err, userData){
+				if(err){
+					console.log("Error creating user: ", err);
+				} else{
+					console.log("Succesfully created user account: ", userData);
+				}
+			});
+		}
+		function handleUserLogin(e){
+			var email = $('#login-email').val();
+			var pass = $('#login-pass').val();
+			fire.authWithPassword({
+				email: email,
+				password: pass
+			}, function(err, userData){
+				if(err){
+					console.log("Error logging in user: ", err);
+				} else{
+					console.log("Succesfully logged in user account: ", userData);
+				}
+			});
+		}
+		function handleUserLoginFacebook(e){
+			var email = $('#login-email').val();
+			var pass = $('#login-pass').val();
+			fire.authWithOAuthPopup("facebook", function(err, userData){
+				if(err){
+					console.log("Error logging in user: ", err);
+				} else{
+					console.log("Succesfully logged in user account with Facebook: ", userData);
+				}
+			});
+		}
+	</script>
+</body>
+</html>

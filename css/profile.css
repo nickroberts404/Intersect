@@ -1,0 +1,181 @@
+.panel-bd-top{
+
+	border-top: 3px solid #cb5727;
+}
+
+.light-widget .panel-heading {
+    background: #FFFFFF
+}
+.light-widget .panel-heading .panel-title {
+    color: #888888
+}
+.light-widget .vd_panel-menu .menu {
+    color: #b5b5b5
+}
+.light-widget .bordered {
+    border-bottom: 1px solid #EEEEEE
+}
+
+.light-widget .bordered,
+.dark-widget .bordered {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: -1px;
+    margin-right: -1px
+}
+
+
+.panel {
+    background: none
+}
+.panel .no-title {
+    height: 30px
+}
+.panel .panel-heading {
+    position: relative;
+    padding: 7px 15px
+}
+.panel .panel-heading .panel-title .menu-icon {
+    margin-right: 5px;
+    width: 20px;
+    height: 21px;
+    line-height: 21px;
+    display: inline-block;
+    text-align: center
+}
+.panel .panel-title {
+    color: #fff
+}
+.panel .panel-title a:hover,
+.panel .panel-title a:focus {
+    color: #fff
+}
+.panel .panel-body,
+.panel .panel-body-list {
+    background: #fff;
+    position: relative
+}
+.panel .panel-body:before,
+.panel .panel-body-list:before,
+.panel .panel-body:after,
+.panel .panel-body-list:after {
+    content: " ";
+    display: table
+}
+.panel .panel-body:after,
+.panel .panel-body-list:after {
+    clear: both
+}
+.panel .panel-body-list .table {
+    margin-bottom: 0
+}
+.panel .panel-body {
+    padding: 15px 25px 25px
+}
+.panel-group .panel .panel-heading {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.panel-group .panel .panel-heading .panel-title a {
+    display: block
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+
+.widget {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    position: relative
+}
+.widget:before,
+.widget:after {
+    content: " ";
+    display: table
+}
+.widget:after {
+    clear: both
+}
+[data-rel^="sortable"] .widget:hover {
+    cursor: move
+}
+.widget .vd_panel-menu {
+    right: 15px;
+    top: 6px
+}
+.widget .vd_panel-menu .menu {
+    border: none;
+    line-height: 22px;
+    margin-right: 2px;
+    color: #F0F0F0;
+    font-size: 12px;
+    height: 24px;
+    width: 22px
+}
+.widget .vd_panel-menu>.entypo-icon {
+    font-size: 18px;
+    line-height: 26px
+}
+.widget .vd_panel-menu>.smaller-font {
+    font-size: 14px
+}
+.widget .vd_panel-menu>.menu:hover,
+.widget .vd_panel-menu>.menu.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF
+}
+.widget .vd_panel-menu .child-menu {
+    font-size: 13px
+}
+
+.login-layout .panel-body {
+    padding: 20px 30px;
+    background: none;
+    border-bottom: 1px solid #DDDDDD
+}
+
+.panel-body .form-actions-condensed {
+    margin: 40px -25px -25px;
+    padding: 10px 25px;
+    background-color: #F5F5F5
+}
+
+.vd_info-parent {
+    position: relative
+}
+
+/*for the profile image*/
+#imgContainer{
+	width: 155px;
+}
+
+/*the about panel*/
+.colorMeWhite{
+	background-color: #ffffff;
+}
+
+
+.setTabHeight{
+    height: 459px;
+}
+
+.iconPad{
+    padding-top: 10px;
+}
+
+.iconPadRight{
+    padding-right: 5px; 
+}
+
+.tableBoderColor{
+    border-bottom: 1px solid #cb5727;
+}
