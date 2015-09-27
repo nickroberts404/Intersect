@@ -129,7 +129,9 @@ Home Page Styles
 }
 
 .homePageCover h1{
-  margin: 100px 0 45px 0;
+  letter-spacing: 9px;
+  font-size: 60px;
+  margin: 150px 0 150px 0;
 }
 
 .texture-overlay {
@@ -142,7 +144,8 @@ Home Page Styles
 
 #logoContainer {
     vertical-align: middle;
-    width: 75px;
+    width: 85px;
+    
     height: auto;
     /*padding-bottom: 190px;*/
 }
@@ -248,7 +251,7 @@ Screenshots Intro
     margin-bottom: 20px;
     color: #24374b;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 35px;
 }
 .screenshots-intro p {
     margin-bottom: 25px;

@@ -5,11 +5,13 @@
   <title>Intersect- Find people to work on projects</title>
   <link rel="stylesheet" type="text/css" href="css/bundle.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/dropdown.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- JS Lib -->
   <script src="js/jquery.min.js"></script>
   <script src="js/moment.min.js"></script>
   <script src="js/bundle.js"></script>
+  <script src="js/dropdown.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
 </head>
@@ -23,6 +25,12 @@
       <div class="auth-form z-depth-3 col l8 m8 s12">
 
         <form method="POST" action="/register">
+          <div class="row">
+            <div class="input-field col s6">
+              <img class="circle col s5" src="img/profilepic.jpg"
+            </div>
+          </div>
+
           <div class="row">
             <div class="input-field col s6">
               <input id="first_name" type="text" class="validate">
@@ -45,23 +53,27 @@
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
-            <input id="username" type="text" class="validate">
-            <label for="username">Username</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12" >
-              <input id="password" type="password" class="validate">
-              <label for="password">Password</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="confirm_password" type="password" class="validate">
-              <label for="confirm_password">Confirm Password</label>
-            </div>
-          </div>
+          <select name="skills" multiple="" class="ui fluid dropdown">
+            <option value="">Skills</option>
+            <option value="angular">Angular</option>
+            <option value="css">CSS</option>
+            <option value="design">Graphic Design</option>
+            <option value="ember">Ember</option>
+            <option value="html">HTML</option>
+            <option value="ia">Information Architecture</option>
+            <option value="javascript">Javascript</option>
+            <option value="mech">Mechanical Engineering</option>
+            <option value="meteor">Meteor</option>
+            <option value="node">NodeJS</option>
+            <option value="plumbing">Plumbing</option>
+            <option value="python">Python</option>
+            <option value="rails">Rails</option>
+            <option value="react">React</option>
+            <option value="repair">Kitchen Repair</option>
+            <option value="ruby">Ruby</option>
+            <option value="ui">UI Design</option>
+            <option value="ux">User Experience</option>
+          </select>
      
           <div class="center-align">
             <button type="submit" class="waves-effect waves-light btn auth-form-submit-button">Register</button>
