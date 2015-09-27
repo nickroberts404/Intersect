@@ -6,11 +6,17 @@
   <link rel="stylesheet" type="text/css" href="css/bundle.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/updatePage.css">
+  <link rel="stylesheet" href="css/dropdown.min.css">
+  <link rel="stylesheet" href="css/transition.min.css">
+  <link rel="stylesheet" href="css/semantic.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- JS Lib -->
   <script src="js/jquery.min.js"></script>
   <script src="js/moment.min.js"></script>
   <script src="js/bundle.js"></script>
+  <script src="js/dropdown.min.js"></script>
+  <script src="js/transition.min.js"></script>
+  <script src="js/semantic.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
 </head>
@@ -63,6 +69,31 @@
               <label for="confirm_password">Confirm Password</label>
             </div>
           </div>
+          <div class="ui fluid multiple search selection dropdown">
+            <input name="tags" type="hidden">
+            <i class="dropdown icon"></i>
+            <div class="default text">Skills</div>
+            <div class="menu">
+              <div class="item" data-value="angular">Angular</div>
+              <div class="item" data-value="css">CSS</div>
+              <div class="item" data-value="design">Graphic Design</div>
+              <div class="item" data-value="ember">Ember</div>
+              <div class="item" data-value="html">HTML</div>
+              <div class="item" data-value="ia">Information Architecture</div>
+              <div class="item" data-value="javascript">Javascript</div>
+              <div class="item" data-value="mech">Mechanical Engineering</div>
+              <div class="item" data-value="meteor">Meteor</div>
+              <div class="item" data-value="node">NodeJS</div>
+              <div class="item" data-value="plumbing">Plumbing</div>
+              <div class="item" data-value="python">Python</div>
+              <div class="item" data-value="rails">Rails</div>
+              <div class="item" data-value="react">React</div>
+              <div class="item" data-value="repair">Kitchen Repair</div>
+              <div class="item" data-value="ruby">Ruby</div>
+              <div class="item" data-value="ui">UI Design</div>
+              <div class="item" data-value="ux">User Experience</div>
+            </div>
+          </div>
      
           <div class="center-align">
             <button type="submit" class="waves-effect waves-light btn auth-form-submit-button">Register</button>
@@ -74,5 +105,8 @@
   
       </div>
     </section>
+    <script> 
+    $('.ui.dropdown').dropdown({allowAdditions: true});
+    </script>
   </body>
   </html>

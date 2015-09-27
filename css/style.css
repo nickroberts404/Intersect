@@ -15,7 +15,7 @@ body > div {
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
-h/*tml { 
+/*html { 
   background: url(../img/pic.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -157,7 +157,7 @@ section.howItWorks a {
 /* ==========================================================================
 Screenshots Intro
 ========================================================================== */
-.screenshots-intro {
+/*.screenshots-intro {
     padding: 0px 0 20px 0;
     background-color: #747A7C;
 }
@@ -171,7 +171,7 @@ Screenshots Intro
     margin-bottom: 25px;
     color: #778899;
 }
-
+*/
 /*Page Footer*/
 
 footer.page-footer {
