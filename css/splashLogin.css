@@ -1,0 +1,41 @@
+.splash-login {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	padding: 10px;
+}
+/*Color for the lines in the form*/
+.splash-login input[type=text]:focus:not([readonly]),
+.splash-login input[type=password]:focus:not([readonly]),
+.splash-login input[type=email]:focus:not([readonly]),
+.splash-login input[type=url]:focus:not([readonly]),
+.splash-login input[type=time]:focus:not([readonly]),
+.splash-login input[type=date]:focus:not([readonly]),
+.splash-login input[type=datetime-local]:focus:not([readonly]),
+.splash-login input[type=tel]:focus:not([readonly]),
+.splash-login input[type=number]:focus:not([readonly]),
+.splash-login input[type=search]:focus:not([readonly]),
+.splash-login textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #55b5ed;
+  box-shadow: 0 1px 0 0 #55b5ed;
+}
+
+
+/*The font after the field is clicked*/
+.splash-login input[type=text]:focus:not([readonly]) + label,
+.splash-login input[type=password]:focus:not([readonly]) + label,
+.splash-login input[type=email]:focus:not([readonly]) + label,
+.splash-login input[type=url]:focus:not([readonly]) + label,
+.splash-login input[type=time]:focus:not([readonly]) + label,
+.splash-login input[type=date]:focus:not([readonly]) + label,
+.splash-login input[type=datetime-local]:focus:not([readonly]) + label,
+.splash-login input[type=tel]:focus:not([readonly]) + label,
+.splash-login input[type=number]:focus:not([readonly]) + label,
+.splash-login input[type=search]:focus:not([readonly]) + label,
+.splash-login textarea.materialize-textarea:focus:not([readonly]) + label {
+   color: #55b5ed; 
+}
+/*The font after the field is clicked*/
+.splash-login .input-field label
+{
+   color: #fff; 
+}

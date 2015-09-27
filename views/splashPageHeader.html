@@ -1,36 +1,19 @@
 <section class="homePageCover">
-   <nav>
-      <div class="nav-wrapper">
-         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#!"></a></li>
-            <li><a href="#!"></a></li>
-            <li><a href="#!"></a></li>
-            <li><a href="#!"></a></li>
-            <li><a href="#!"></a></li>
-         </ul>
-      </div>
-   </nav>
    <div class="texture-overlay">
       <div class="container padMylogo" >
-         <div class="row">
-            <a href="#" class="brand-logo">
-               <div class="col m7 s4">
-               </div>
-            </a>
-            <div id = "top-buttons">
-            <a href="/login" class="waves-effect waves-light btn"><i class="material-icons left"></i>Sign In</a>
-            <a href="/login" class="waves-effect waves-light btn"><i class="material-icons left"></i>Sign Up</a>
-            </div>
-         </div>
          <div class="row">
             <div class="center-align">
                <h1 class="animated fadeInDown">
                   <img src="img/intersectLogo.svg"  id="logoContainer" alt="logo"></img>
                   Intersect
                </h1>
-               <h5 id="motto" class="animated fadeInDown">Connecting creative minds</h5>
-               <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Learn More</a>
-               <!-- <a href="#howItWorksSection" class="waves-effect waves-light btn"><i class="material-icons left"></i>Get a Quote</a> -->
+            </div>
+         </div>
+         <div ng-include src="'views/splashLogin.html'" class="row splash-login"></div>
+         <div class="row">
+            <div class="center-align">
+               <h5 id="motto" class="animated fadeInDown">Connecting creative minds since 1989's</h5>
+               <a class="waves-effect waves-light btn">Learn More</a>
             </div>
          </div>
       </div>

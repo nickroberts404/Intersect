@@ -39,7 +39,7 @@ Home Page Styles
 .homePageCover{
     position: relative;
     min-height: 100vh;
-    background: rgb(255, 255, 255) url('../img/coverPhoto.jpg') no-repeat center center;
+    background: rgb(255, 255, 255) url('../img/morning-mountain.jpeg') no-repeat center center;
     background-size: cover;
     color: #fff;
     overflow: auto;
@@ -48,7 +48,7 @@ Home Page Styles
 .homePageCover h1{
   letter-spacing: 9px;
   font-size: 60px;
-  margin: 150px 0 150px 0;
+  margin: 100px 0 40px 0;
 }
 
 .texture-overlay {
