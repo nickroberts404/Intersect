@@ -3,25 +3,28 @@
 <div class="col s12">
   <div class="row">
     <div class="input-field col s6">
-      <input id="user-email" type="text" class="validate">
+      <input id="user-email" type="text" class="validate" ng-model="loginEmail">
       <label for="user-email">Email</label>
     </div>
     <div class="input-field col s6">
-      <input id="user-pass" type="password" class="validate">
+      <input id="user-pass" type="password" class="validate" ng-model="loginPass">
       <label for="user-pass">Password</label>
     </div>
     <div class="row">
-      <div class="col s3 offset-s2 center-align">
-        <button class="waves-effect waves-light btn">Login</button>
+      <div class="col s2 offset-s1 center-align">
+        <button class="waves-effect waves-light btn" ng-click="handleUserCreation()">Sign Up</button>
       </div>
       <div class="col s2 center-align">
-        <button class="waves-effect waves-light btn"><i class="fa fa-facebook"></i></button>
+        <button class="waves-effect waves-light btn" ng-click="handlePasswordLogin()">Login</button>
       </div>
       <div class="col s2 center-align">
-        <button class="waves-effect waves-light btn"><i class="fa fa-github-square"></i></button>
+        <button class="waves-effect waves-light btn" ng-click="handleOAuthLogin('facebook')"><i class="fa fa-facebook"></i></button>
       </div>
       <div class="col s2 center-align">
-        <button class="waves-effect waves-light btn"><i class="fa fa-google"></i></button>
+        <button class="waves-effect waves-light btn" ng-click="handleOAuthLogin('github')"><i class="fa fa-github-square"></i></button>
+      </div>
+      <div class="col s2 center-align">
+        <button class="waves-effect waves-light btn" ng-click="handleOAuthLogin('google')"><i class="fa fa-google"></i></button>
       </div>
     </div>
   </div>
