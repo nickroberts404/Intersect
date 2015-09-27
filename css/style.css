@@ -241,8 +241,8 @@ section.howItWorks a {
 Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
-    /*padding: 20px 0 20px 0;*/
-    /*background-color: #f6f7f9;*/
+    padding: 0px 0 20px 0;
+    background-color: #747A7C;
 }
 .screenshots-intro h1 {
     margin-bottom: 20px;
