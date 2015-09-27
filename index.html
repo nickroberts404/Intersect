@@ -11,11 +11,14 @@
       <script src="js/vendor/moment.min.js"></script>
       <script src="js/vendor/bundle.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+      <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
       <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
    </head>
    <body>
-     <header ng-include src="'views/splashPageHeader.html'"></header>
-     <section ng-include src="'views/splashAboutUs.html'"></section>
+      <div ui-view="main">
+        <header ng-include src="'views/splashPageHeader.html'"></header>
+        <section ng-include src="'views/splashAboutUs.html'"></section>
+      </div>
       <script src="js/app.js"></script>
    </body>
 </html>

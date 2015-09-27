@@ -1,10 +1,31 @@
-var app = angular.module("hackApp", []);
-
-// $(document).ready(function(){
-//   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-//   $('.modal-trigger').leanModal();
-//  });
- 
-//   $(document).ready(function() {
-//   $('select').material_select();
-// });
+var app = angular.module("hackApp", ["ui.router"]);
+app.config(function($urlRouterProvider, $stateProvider){
+	$urlRouterProvider.otherwise('/');
+	$stateProvider
+	    .state('index', {
+	        url: "/",
+	        views: {
+	            "main": {
+	                templateUrl: "../index.html"
+	            }
+	        }
+	    })
+	    .state('updateInfo', {
+	        url: "/updateInfo",
+	        views: {
+	            "main": {
+	                templateUrl: "../views/update.html",
+	                controller: "updateCtrl"
+	            }
+	        }
+	    })
+	    .state('explore', {
+	        url: "/explore",
+	        views: {
+	            "main": {
+	                templateUrl: "../views/explore.html",
+	                controller: "exploreCtrl"
+	            }
+	        }
+	    })
+	});

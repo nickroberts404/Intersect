@@ -29,6 +29,7 @@ function handleLogin(error, userData){
 		console.log("Error logging in user: ", error);
 	} else{
 		console.log("Succesfully logged in user account: ", userData);
+		$("#switchToInfo").trigger("click");
 	}
 }
 
@@ -41,6 +42,7 @@ function handleUserCreation(){
 			console.log("Error creating user: ", error);
 		} else{
 			console.log("Succesfully created user account: ", userData);
+			$("#switchToInfo").trigger("click");
 		}
 	});
 }
