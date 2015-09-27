@@ -1,7 +1,42 @@
 #user-container{
 	height: 100%;
-	background-color: #F0EEF2;
+	background-color: #C4D7E8;
+	text-align: center;
+	position: fixed;
 }
+
+#finder-content{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+}
+#person-card{
+	height: 150px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 15px;
+	text-align: left;
+	vertical-align: middle;
+
+}
+
+.profile-pic{
+	margin-top: 15px;
+	width: 50%;
+	height: auto;
+}
+
+
+
+.card-pic{
+	height: 100%;
+	width: auto;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 #user-bar{
 	height: 100%;
 	width: 100%;
@@ -9,4 +44,8 @@
 
 #layout-container{
 	height: 100%;
+}
+
+.people-card-list{
+	width: 100%;
 }
